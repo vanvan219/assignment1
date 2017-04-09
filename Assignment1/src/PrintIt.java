@@ -19,7 +19,7 @@ public class PrintIt{
        * First tries to process the data but returns file not found if it can't find the file
      */
       try{
-         File f = new File("testdata.txt");
+         File f = new File("/home/m/mngvan003/CSC2001F/Assignment1/src/testdata");
          Scanner s = new Scanner(f);
          BinaryTree bst = new BinaryTree(); //create tree
          
@@ -30,7 +30,6 @@ public class PrintIt{
           *Prints items from binary tree
          */
          while(s.hasNextLine()){
-            String line = s.nextLine();
             String l = s.nextLine();
             String[] info = l.split("\\|");
             String proper = info[2]+","+info[1]+info[0]; 
